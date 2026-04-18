@@ -21,7 +21,7 @@ const disciplines = [
     border: "border-amber-700/30 hover:border-accent/50",
     badge: "bg-amber-900/60 text-amber-300",
     description:
-      "Hit the roads and trails of Gozo with group rides and structured bike sessions. Improve your power, climbing strength, and race-day strategy in one of Malta&apos;s most scenic cycling environments.",
+      "Hit the roads of Gozo with group rides and structured cycling sessions. Improve your power, climbing strength, and race-day strategy in one of Malta&apos;s most scenic riding environments.",
     highlights: [
       "Road & turbo trainer sessions",
       "Power & cadence training",
@@ -36,7 +36,7 @@ const disciplines = [
     border: "border-green-700/30 hover:border-green-500/50",
     badge: "bg-green-900/60 text-green-300",
     description:
-      "Build a strong, injury-resistant run with coached sessions that blend speed work, threshold training, and long runs. Whether you&apos;re after a 5K PB or an Ironman finish, we&apos;ll get you there.",
+      "Build a strong, injury-resistant run with coached sessions that blend speed work, threshold training, and long runs. Whether you&apos;re chasing a 5K personal best or preparing for a longer race, we&apos;ll help you get there.",
     highlights: [
       "Track, trail & road sessions",
       "Speed & tempo workouts",
@@ -62,8 +62,7 @@ export default function Disciplines() {
           </h2>
           <div className="h-1 w-16 bg-accent mx-auto rounded-full mb-6" />
           <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-            Train in one sport or master all three. Triathlon is the ultimate test of endurance —
-            and we have the coaching to get you there.
+            Train in one sport or build your multisport foundation with the support of our coaching team.
           </p>
         </div>
 
@@ -102,22 +101,18 @@ export default function Disciplines() {
         <div className="mt-12 bg-gradient-to-r from-primary/30 via-dark-card to-accent/20 border border-primary/30 rounded-3xl p-8 text-center">
           <div className="text-4xl mb-4">🏅</div>
           <h3 className="text-2xl sm:text-3xl font-bold text-white mb-3">
-            Triathlon — The Full Package
+            Triathlon
           </h3>
           <p className="text-gray-300 max-w-2xl mx-auto text-base leading-relaxed">
-            Swim, bike, run — triathlon combines all three disciplines into one extraordinary
-            challenge. At D Sports Lab, we offer integrated triathlon training so you can compete
-            with confidence, whatever the distance.
+            For triathlon information, coaching details, and upcoming opportunities, please contact us directly.
           </p>
-          <div className="flex gap-3 justify-center mt-6 flex-wrap text-sm">
-            {["Sprint", "Olympic", "70.3 / Half", "Full Ironman"].map((dist) => (
-              <span
-                key={dist}
-                className="bg-dark/60 border border-dark-border text-gray-300 px-4 py-1.5 rounded-full"
-              >
-                {dist}
-              </span>
-            ))}
+          <div className="mt-6">
+            <a
+              href="/#contact"
+              className="inline-flex items-center justify-center bg-accent hover:bg-yellow-500 text-dark font-bold text-sm px-6 py-3 rounded-full transition-all hover:-translate-y-0.5"
+            >
+              Contact Us for Triathlon Info
+            </a>
           </div>
         </div>
       </div>
