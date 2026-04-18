@@ -1,12 +1,3 @@
-const events = [
-  {
-    date: "TBC",
-    title: "D Sports Lab Open Day",
-    description: "Come and meet the team, try our facilities, and find out how to join.",
-    type: "Club Event",
-  },
-];
-
 export default function Events() {
   return (
     <section id="events" className="py-24 bg-dark-card relative overflow-hidden">
@@ -18,29 +9,48 @@ export default function Events() {
           <h2 className="text-4xl sm:text-5xl font-bold text-white mt-2 mb-4">
             Upcoming Events
           </h2>
-          <div className="h-1 w-16 bg-accent mx-auto rounded-full" />
+          <div className="h-1 w-16 bg-accent mx-auto rounded-full mb-6" />
+          <p className="text-gray-400 max-w-2xl mx-auto text-lg">
+            We are preparing our next D Sports Lab race. Registration details will be announced soon.
+          </p>
         </div>
 
-        <div className="grid gap-6 max-w-3xl mx-auto">
-          {events.map((event) => (
-            <div
-              key={event.title}
-              className="bg-dark border border-dark-border rounded-2xl p-6 hover:border-primary/50 transition-colors"
-            >
-              <div className="flex items-start gap-4">
-                <div className="bg-primary/10 border border-primary/30 rounded-xl px-4 py-2 text-center min-w-[64px]">
-                  <div className="text-accent font-bold text-sm">{event.date}</div>
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-gradient-to-br from-primary/20 to-accent/10 border border-primary/30 rounded-3xl p-8 sm:p-10">
+            <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-6">
+              <div>
+                <div className="text-accent text-xs font-semibold tracking-[0.3em] uppercase mb-3">
+                  Race Coming Soon
                 </div>
-                <div>
-                  <span className="text-xs text-accent font-semibold uppercase tracking-widest">
-                    {event.type}
-                  </span>
-                  <h3 className="text-white font-bold text-lg mt-1">{event.title}</h3>
-                  <p className="text-gray-400 text-sm mt-1">{event.description}</p>
-                </div>
+                <h3 className="text-white font-bold text-2xl sm:text-3xl mb-3">
+                  D Sports Lab Race Event
+                </h3>
+                <p className="text-gray-300 text-base leading-relaxed max-w-2xl">
+                  A new race event is on the way. Tomorrow we can add the Google Form registration link,
+                  race details, and the full call to action here.
+                </p>
+              </div>
+              <div className="bg-dark/60 border border-dark-border rounded-2xl px-5 py-4 min-w-[140px] text-center">
+                <div className="text-gray-500 text-xs uppercase tracking-widest mb-2">Status</div>
+                <div className="text-accent font-bold text-sm">Coming Soon</div>
               </div>
             </div>
-          ))}
+
+            <div className="mt-8 flex flex-col sm:flex-row gap-4">
+              <a
+                href="#contact"
+                className="inline-flex items-center justify-center bg-accent hover:bg-yellow-500 text-dark font-bold text-sm px-6 py-3 rounded-full transition-all hover:-translate-y-0.5"
+              >
+                Ask for Details
+              </a>
+              <a
+                href="#hero"
+                className="inline-flex items-center justify-center border border-dark-border hover:border-primary/60 text-gray-300 hover:text-white font-semibold text-sm px-6 py-3 rounded-full transition-all"
+              >
+                Back to Top
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>

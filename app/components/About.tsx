@@ -27,30 +27,24 @@ export default function About() {
           <div className="space-y-6">
             <p className="text-gray-300 text-lg leading-relaxed">
               D Sports Lab was founded in <span className="text-accent font-semibold">2022</span>{" "}
-              in the heart of Gozo, Malta — a small island with a big sporting spirit. We are a
-              multisport and triathlon club dedicated to developing athletes at every stage of their
-              journey.
+              in Gozo, Malta. We are a multisport and triathlon club helping athletes of all levels
+              train with confidence and consistency.
             </p>
             <p className="text-gray-300 text-lg leading-relaxed">
-              Whether you&apos;re taking your first steps in the pool, logging your first kilometres on
-              the bike, or lining up for your first triathlon, our team of{" "}
-              <span className="text-white font-semibold">qualified coaches</span> is here to guide
-              you every step of the way.
+              From swimming and cycling to running and triathlon, our{" "}
+              <span className="text-white font-semibold">qualified coaches</span> are here to guide
+              every athlete with the attention and support they deserve.
             </p>
             <p className="text-gray-300 text-lg leading-relaxed">
-              Our philosophy is simple:{" "}
-              <span className="text-accent font-medium italic">every athlete matters</span>. We
-              don&apos;t just train champions — we build confident, well-rounded athletes who love what
-              they do. From complete beginners to seasoned competitors, everyone gets the attention
-              and support they deserve.
+              Our philosophy is simple, <span className="text-accent font-medium italic">every athlete matters</span>.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <a
-                href="#join"
+                href="#events"
                 className="bg-primary hover:bg-[#1e7fa0] text-white font-semibold px-6 py-3 rounded-full text-sm transition-all hover:-translate-y-0.5 text-center"
               >
-                Become a Member
+                Upcoming Event
               </a>
               <a
                 href="#contact"
