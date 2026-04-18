@@ -4,10 +4,10 @@ import { useState, useEffect } from "react";
 import Logo from "./Logo";
 
 const navLinks = [
-  { href: "#about", label: "About" },
-  { href: "#disciplines", label: "Disciplines" },
+  { href: "/#about", label: "About" },
+  { href: "/#disciplines", label: "Disciplines" },
   { href: "/events", label: "Events" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export default function Navbar() {
@@ -31,7 +31,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo + Name */}
-          <a href="#hero" className="flex items-center gap-3 group">
+          <a href="/" className="flex items-center gap-3 group">
             <Logo size={40} />
             <div className="flex flex-col leading-tight">
               <span className="text-white font-bold text-lg tracking-wide group-hover:text-accent transition-colors">
