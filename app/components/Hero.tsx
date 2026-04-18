@@ -85,7 +85,7 @@ export default function Hero() {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a
-            href="#events"
+            href="/events"
             className="bg-accent hover:bg-yellow-500 text-dark font-bold text-base px-8 py-4 rounded-full transition-all duration-200 hover:shadow-xl hover:shadow-accent/30 hover:-translate-y-1 min-w-[160px]"
           >
             View Events

@@ -41,7 +41,7 @@ export default function About() {
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <a
-                href="#events"
+                href="/events"
                 className="bg-primary hover:bg-[#1e7fa0] text-white font-semibold px-6 py-3 rounded-full text-sm transition-all hover:-translate-y-0.5 text-center"
               >
                 Upcoming Event

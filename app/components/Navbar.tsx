@@ -6,7 +6,7 @@ import Logo from "./Logo";
 const navLinks = [
   { href: "#about", label: "About" },
   { href: "#disciplines", label: "Disciplines" },
-  { href: "#events", label: "Events" },
+  { href: "/events", label: "Events" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -55,7 +55,7 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="#events"
+              href="/events"
               className="bg-accent hover:bg-yellow-500 text-dark font-bold text-sm px-5 py-2.5 rounded-full transition-all duration-200 hover:shadow-lg hover:shadow-accent/30 hover:-translate-y-0.5"
             >
               Events
@@ -93,7 +93,7 @@ export default function Navbar() {
             ))}
             <div className="px-6 pt-2">
               <a
-                href="#events"
+                href="/events"
                 onClick={() => setMenuOpen(false)}
                 className="block text-center bg-accent hover:bg-yellow-500 text-dark font-bold text-sm px-5 py-2.5 rounded-full transition-colors"
               >
