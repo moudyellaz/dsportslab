@@ -2,34 +2,34 @@ const schedule = [
   {
     day: "Monday",
     sessions: [
-      { time: "06:30", type: "Pool Swimming", level: "All levels", emoji: "🏊" },
-      { time: "18:00", type: "Running — Track", level: "Intermediate / Advanced", emoji: "🏃" },
+      { time: "06:30", type: "Pool swimming", level: "All levels", emoji: "🏊" },
+      { time: "18:00", type: "Running — track", level: "Intermediate / Advanced", emoji: "🏃" },
     ],
   },
   {
     day: "Wednesday",
     sessions: [
-      { time: "06:30", type: "Pool Swimming", level: "All levels", emoji: "🏊" },
-      { time: "17:30", type: "Cycling — Road Ride", level: "All levels", emoji: "🚴" },
+      { time: "06:30", type: "Pool swimming", level: "All levels", emoji: "🏊" },
+      { time: "17:30", type: "Cycling — road ride", level: "All levels", emoji: "🚴" },
     ],
   },
   {
     day: "Thursday",
     sessions: [
-      { time: "18:00", type: "Running — Easy / Long", level: "All levels", emoji: "🏃" },
+      { time: "18:00", type: "Running — easy / long", level: "All levels", emoji: "🏃" },
     ],
   },
   {
     day: "Saturday",
     sessions: [
-      { time: "07:00", type: "Long Ride — Group", level: "All levels", emoji: "🚴" },
-      { time: "09:30", type: "Brick Session (Bike + Run)", level: "Intermediate / Advanced", emoji: "🏅" },
+      { time: "07:00", type: "Long ride — group", level: "All levels", emoji: "🚴" },
+      { time: "09:30", type: "Brick session (bike + run)", level: "Intermediate / Advanced", emoji: "🏅" },
     ],
   },
   {
     day: "Sunday",
     sessions: [
-      { time: "07:30", type: "Open Water Swimming", level: "All levels", emoji: "🌊" },
+      { time: "07:30", type: "Open water swimming", level: "All levels", emoji: "🌊" },
     ],
   },
 ];
@@ -37,22 +37,22 @@ const schedule = [
 const principles = [
   {
     icon: "🎯",
-    title: "Structured Programming",
+    title: "Structured programming",
     text: "Periodised training plans tailored to your goals — whether that&apos;s completing your first sprint tri or qualifying for a championship.",
   },
   {
     icon: "📊",
-    title: "Data-Driven Coaching",
+    title: "Data-driven coaching",
     text: "We use heart rate, power output, and pace data to track your progress and ensure you&apos;re always training at the right intensity.",
   },
   {
     icon: "🤝",
-    title: "Community Training",
+    title: "Community training",
     text: "Training is better together. Our group sessions keep you motivated, accountable, and surrounded by people who share your passion.",
   },
   {
     icon: "🔄",
-    title: "Recovery & Longevity",
+    title: "Recovery & longevity",
     text: "We build recovery into every training block. Stay healthy, stay consistent, and perform at your best when it matters most.",
   },
 ];
@@ -82,7 +82,7 @@ export default function Training() {
           {/* Schedule */}
           <div className="lg:col-span-3 space-y-4">
             <h3 className="text-xl font-bold text-white mb-6 flex items-center gap-2">
-              <span className="text-accent">📅</span> Weekly Schedule
+              <span className="text-accent">📅</span> Weekly schedule
               <span className="text-xs font-normal text-gray-500 ml-2">(subject to change — contact us for latest)</span>
             </h3>
             {schedule.map((day) => (
@@ -119,7 +119,7 @@ export default function Training() {
           {/* Principles */}
           <div className="lg:col-span-2 space-y-5">
             <h3 className="text-xl font-bold text-white mb-6 flex items-center gap-2">
-              <span className="text-accent">💡</span> Our Approach
+              <span className="text-accent">💡</span> Our approach
             </h3>
             {principles.map((p) => (
               <div
@@ -143,7 +143,7 @@ export default function Training() {
                 href="#join"
                 className="bg-accent hover:bg-yellow-500 text-dark font-bold text-sm px-6 py-2.5 rounded-full transition-all hover:-translate-y-0.5 inline-block"
               >
-                Join the Club
+                Join the club
               </a>
             </div>
           </div>
