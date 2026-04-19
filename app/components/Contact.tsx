@@ -2,46 +2,45 @@
 
 import { useState } from "react";
 
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/xpwzgkqn";
-
 type FormState = "idle" | "loading" | "success" | "error";
 
 export default function Contact() {
   const [formState, setFormState] = useState<FormState>("idle");
   const [errorMsg, setErrorMsg] = useState("");
 
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setFormState("loading");
     setErrorMsg("");
 
     const form = e.currentTarget;
-    const data = new FormData(form);
+    const formData = new FormData(form);
+    const name = String(formData.get("name") || "").trim();
+    const email = String(formData.get("email") || "").trim();
+    const phone = String(formData.get("phone") || "").trim();
+    const message = String(formData.get("message") || "").trim();
 
-    try {
-      const res = await fetch(FORMSPREE_ENDPOINT, {
-        method: "POST",
-        body: data,
-        headers: { Accept: "application/json" },
-      });
-
-      if (res.ok) {
-        setFormState("success");
-        form.reset();
-      } else {
-        const json = await res.json().catch(() => ({}));
-        setErrorMsg(
-          (json as { error?: string }).error ||
-            "Something went wrong. Please try again or email us directly at Dsportslab@gmail.com"
-        );
-        setFormState("error");
-      }
-    } catch {
-      setErrorMsg(
-        "Network error. Please check your connection or email us at Dsportslab@gmail.com"
-      );
+    if (!name || !email || !message) {
+      setErrorMsg("Please complete the required fields.");
       setFormState("error");
+      return;
     }
+
+    const subject = encodeURIComponent(`D Sports Lab Website Contact — ${name}`);
+    const body = encodeURIComponent(
+      [
+        `Name: ${name}`,
+        `Email: ${email}`,
+        `Phone: ${phone || "Not provided"}`,
+        "",
+        "Message:",
+        message,
+      ].join("\n")
+    );
+
+    window.location.href = `mailto:Dsportslab@gmail.com?subject=${subject}&body=${body}`;
+    form.reset();
+    setFormState("success");
   }
 
   return (
@@ -154,16 +153,16 @@ export default function Contact() {
           <div className="text-center mb-10">
             <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">Send Us a Message</h3>
             <p className="text-gray-400">
-              Use the form below and your message will be forwarded to the club email.
+              Fill in the form below and your email app will open with your message ready to send to the club.
             </p>
           </div>
 
           {formState === "success" ? (
             <div className="bg-green-900/30 border border-green-600/40 rounded-2xl p-10 text-center">
-              <div className="text-5xl mb-4">🎉</div>
-              <h4 className="text-white text-xl font-bold mb-2">Message Sent!</h4>
+              <div className="text-5xl mb-4">✉️</div>
+              <h4 className="text-white text-xl font-bold mb-2">Email Draft Opened</h4>
               <p className="text-gray-300 text-sm leading-relaxed">
-                Thanks for reaching out. We&apos;ll get back to you as soon as possible.
+                Your email app should now open with the message pre-filled for D Sports Lab.
               </p>
               <button
                 onClick={() => setFormState("idle")}
@@ -173,12 +172,7 @@ export default function Contact() {
               </button>
             </div>
           ) : (
-            <form
-              onSubmit={handleSubmit}
-              className="bg-dark-card border border-dark-border rounded-3xl p-8 space-y-6"
-            >
-              <input type="hidden" name="subject" value="D Sports Lab Website Contact" />
-
+            <form onSubmit={handleSubmit} className="bg-dark-card border border-dark-border rounded-3xl p-8 space-y-6">
               <div className="grid sm:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-medium text-gray-300 mb-2" htmlFor="name">
@@ -246,7 +240,7 @@ export default function Contact() {
                 disabled={formState === "loading"}
                 className="w-full bg-accent hover:bg-yellow-500 disabled:opacity-60 disabled:cursor-not-allowed text-dark font-bold py-4 rounded-full text-sm transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-accent/30"
               >
-                {formState === "loading" ? "Sending…" : "Send Message"}
+                {formState === "loading" ? "Preparing Email…" : "Email Us"}
               </button>
 
               <p className="text-center text-gray-600 text-xs">
