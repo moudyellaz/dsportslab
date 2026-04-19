@@ -10,6 +10,8 @@ const navLinks = [
   { href: "/#contact", label: "Contact" },
 ];
 
+const JOIN_FORM_URL = "https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAFhIIjIF-RUMUU4Wk9HSVY1UTgyTVRPWE05WThLNlg1Ny4u&route=shorturl";
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -55,10 +57,12 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="/events"
+              href={JOIN_FORM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-accent hover:bg-yellow-500 text-dark font-bold text-sm px-5 py-2.5 rounded-full transition-all duration-200 hover:shadow-lg hover:shadow-accent/30 hover:-translate-y-0.5"
             >
-              Events
+              Join the Club
             </a>
           </div>
 
@@ -93,11 +97,13 @@ export default function Navbar() {
             ))}
             <div className="px-6 pt-2">
               <a
-                href="/events"
+                href={JOIN_FORM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setMenuOpen(false)}
                 className="block text-center bg-accent hover:bg-yellow-500 text-dark font-bold text-sm px-5 py-2.5 rounded-full transition-colors"
               >
-                Events
+                Join the Club
               </a>
             </div>
           </div>

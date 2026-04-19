@@ -85,16 +85,18 @@ export default function Hero() {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a
-            href="/events"
+            href="https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAFhIIjIF-RUMUU4Wk9HSVY1UTgyTVRPWE05WThLNlg1Ny4u&route=shorturl"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-accent hover:bg-yellow-500 text-dark font-bold text-base px-8 py-4 rounded-full transition-all duration-200 hover:shadow-xl hover:shadow-accent/30 hover:-translate-y-1 min-w-[160px]"
           >
-            View Events
+            Join the Club
           </a>
           <a
-            href="#about"
+            href="/events"
             className="border-2 border-primary/60 hover:border-primary text-gray-200 hover:text-white font-semibold text-base px-8 py-4 rounded-full transition-all duration-200 hover:-translate-y-1 min-w-[160px]"
           >
-            Learn More
+            View Events
           </a>
         </div>
 

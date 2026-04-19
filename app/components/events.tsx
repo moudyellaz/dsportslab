@@ -38,10 +38,12 @@ export default function Events() {
 
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <a
-                href="#contact"
+                href="https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAFhIIjIF-RUMUU4Wk9HSVY1UTgyTVRPWE05WThLNlg1Ny4u&route=shorturl"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center bg-accent hover:bg-yellow-500 text-dark font-bold text-sm px-6 py-3 rounded-full transition-all hover:-translate-y-0.5"
               >
-                Ask for Details
+                Join the Club
               </a>
               <a
                 href="#hero"

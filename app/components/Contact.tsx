@@ -71,6 +71,26 @@ export default function Contact() {
           </a>
         </div>
 
+        <div className="max-w-4xl mx-auto mt-10 mb-6">
+          <div className="bg-gradient-to-r from-accent/15 to-primary/15 border border-accent/30 rounded-3xl p-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+            <div>
+              <div className="text-accent text-xs font-semibold tracking-[0.3em] uppercase mb-2">Join the Club</div>
+              <h3 className="text-white font-bold text-2xl mb-2">Become part of D Sports Lab</h3>
+              <p className="text-gray-300 text-sm sm:text-base max-w-2xl">
+                If you would like to join the club, complete our membership form and we will get back to you with the next steps.
+              </p>
+            </div>
+            <a
+              href="https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAFhIIjIF-RUMUU4Wk9HSVY1UTgyTVRPWE05WThLNlg1Ny4u&route=shorturl"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center bg-accent hover:bg-yellow-500 text-dark font-bold text-sm px-6 py-3 rounded-full transition-all hover:-translate-y-0.5"
+            >
+              Open Join Form
+            </a>
+          </div>
+        </div>
+
         {/* Location */}
         <div className="max-w-4xl mx-auto mt-6">
           <div className="bg-dark-card border border-dark-border rounded-3xl p-8 flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
