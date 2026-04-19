@@ -62,7 +62,7 @@ export default function Navbar() {
               rel="noopener noreferrer"
               className="bg-accent hover:bg-yellow-500 text-dark font-bold text-sm px-5 py-2.5 rounded-full transition-all duration-200 hover:shadow-lg hover:shadow-accent/30 hover:-translate-y-0.5"
             >
-              Join the Club
+              Join the club
             </a>
           </div>
 
@@ -103,7 +103,7 @@ export default function Navbar() {
                 onClick={() => setMenuOpen(false)}
                 className="block text-center bg-accent hover:bg-yellow-500 text-dark font-bold text-sm px-5 py-2.5 rounded-full transition-colors"
               >
-                Join the Club
+                Join the club
               </a>
             </div>
           </div>

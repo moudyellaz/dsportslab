@@ -49,7 +49,7 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <span className="text-accent text-sm font-semibold tracking-[0.3em] uppercase">
-            Find Us
+            Find us
           </span>
           <h2 className="text-4xl sm:text-5xl font-bold text-white mt-2 mb-4">Contact</h2>
           <div className="h-1 w-16 bg-accent mx-auto rounded-full" />
@@ -113,7 +113,7 @@ export default function Contact() {
         <div className="max-w-4xl mx-auto mt-10 mb-6">
           <div className="bg-gradient-to-r from-accent/15 to-primary/15 border border-accent/30 rounded-3xl p-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
             <div>
-              <div className="text-accent text-xs font-semibold tracking-[0.3em] uppercase mb-2">Join the Club</div>
+              <div className="text-accent text-xs font-semibold tracking-[0.3em] uppercase mb-2">Join the club</div>
               <h3 className="text-white font-bold text-2xl mb-2">Become part of D Sports Lab</h3>
               <p className="text-gray-300 text-sm sm:text-base max-w-2xl">
                 If you would like to join the club, complete our membership form and we will get back to you with the next steps.
@@ -125,7 +125,7 @@ export default function Contact() {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center bg-accent hover:bg-yellow-500 text-dark font-bold text-sm px-6 py-3 rounded-full transition-all hover:-translate-y-0.5"
             >
-              Open Join Form
+              Open join form
             </a>
           </div>
         </div>
@@ -150,7 +150,7 @@ export default function Contact() {
 
         <div className="max-w-2xl mx-auto mt-12">
           <div className="text-center mb-10">
-            <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">Send Us a Message</h3>
+            <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">Send us a message</h3>
             <p className="text-gray-400">
               Fill in the form below and your message will be submitted directly to the club email.
             </p>
@@ -159,7 +159,7 @@ export default function Contact() {
           {formState === "success" ? (
             <div className="bg-green-900/30 border border-green-600/40 rounded-2xl p-10 text-center">
               <div className="text-5xl mb-4">🎉</div>
-              <h4 className="text-white text-xl font-bold mb-2">Message Sent!</h4>
+              <h4 className="text-white text-xl font-bold mb-2">Message sent!</h4>
               <p className="text-gray-300 text-sm leading-relaxed">
                 Your message was submitted successfully. Please note that the first FormSubmit message may require email confirmation for activation.
               </p>
@@ -238,7 +238,7 @@ export default function Contact() {
                 type="submit"
                 className="w-full bg-accent hover:bg-yellow-500 text-dark font-bold py-4 rounded-full text-sm transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-accent/30"
               >
-                Send Message
+                Send message
               </button>
 
               <p className="text-center text-gray-600 text-xs">

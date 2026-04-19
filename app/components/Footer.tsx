@@ -27,7 +27,7 @@ export default function Footer() {
           {/* Quick links */}
           <div>
             <h4 className="text-white font-semibold text-sm uppercase tracking-widest mb-4">
-              Quick Links
+              Quick links
             </h4>
             <ul className="space-y-2.5">
               {[

@@ -14,7 +14,7 @@ export default function About() {
         {/* Section header */}
         <div className="text-center mb-16">
           <span className="text-accent text-sm font-semibold tracking-[0.3em] uppercase">
-            Who We Are
+            Who we are
           </span>
           <h2 className="text-4xl sm:text-5xl font-bold text-white mt-2 mb-4">
             About D Sports Lab
@@ -44,13 +44,13 @@ export default function About() {
                 href="/events"
                 className="bg-primary hover:bg-[#1e7fa0] text-white font-semibold px-6 py-3 rounded-full text-sm transition-all hover:-translate-y-0.5 text-center"
               >
-                Upcoming Event
+                Upcoming event
               </a>
               <a
                 href="#contact"
                 className="border border-dark-border hover:border-primary/60 text-gray-300 hover:text-white font-semibold px-6 py-3 rounded-full text-sm transition-all text-center"
               >
-                Get in Touch
+                Get in touch
               </a>
             </div>
           </div>
@@ -76,7 +76,7 @@ export default function About() {
               <div className="flex items-start gap-4">
                 <div className="text-accent text-2xl flex-shrink-0">🎯</div>
                 <div>
-                  <h3 className="text-white font-bold text-lg mb-1">Our Mission</h3>
+                  <h3 className="text-white font-bold text-lg mb-1">Our mission</h3>
                   <p className="text-gray-300 text-sm leading-relaxed">
                     To help each and every athlete in Gozo reach their full potential through
                     expert coaching, community spirit, and a passion for multisport.

@@ -4,10 +4,10 @@ export default function Events() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <span className="text-accent text-sm font-semibold tracking-[0.3em] uppercase">
-            What&apos;s On
+            What's on
           </span>
           <h2 className="text-4xl sm:text-5xl font-bold text-white mt-2 mb-4">
-            Upcoming Events
+            Upcoming events
           </h2>
           <div className="h-1 w-16 bg-accent mx-auto rounded-full mb-6" />
           <p className="text-gray-400 max-w-2xl mx-auto text-lg">
@@ -20,10 +20,10 @@ export default function Events() {
             <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-6">
               <div>
                 <div className="text-accent text-xs font-semibold tracking-[0.3em] uppercase mb-3">
-                  Race Coming Soon
+                  Race coming soon
                 </div>
                 <h3 className="text-white font-bold text-2xl sm:text-3xl mb-3">
-                  D Sports Lab Race Event
+                  D Sports Lab race event
                 </h3>
                 <p className="text-gray-300 text-base leading-relaxed max-w-2xl">
                   A new race event is on the way. Full race details and registration will be announced soon.
@@ -40,13 +40,13 @@ export default function Events() {
                 href="/#contact"
                 className="inline-flex items-center justify-center bg-accent hover:bg-yellow-500 text-dark font-bold text-sm px-6 py-3 rounded-full transition-all hover:-translate-y-0.5"
               >
-                Ask for Details
+                Ask for details
               </a>
               <a
                 href="/"
                 className="inline-flex items-center justify-center border border-dark-border hover:border-primary/60 text-gray-300 hover:text-white font-semibold text-sm px-6 py-3 rounded-full transition-all"
               >
-                Back to Home
+                Back to home
               </a>
             </div>
           </div>

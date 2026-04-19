@@ -72,10 +72,10 @@ export default function Hero() {
 
         <div className="max-w-2xl mx-auto mb-10 rounded-2xl border border-accent/30 bg-white/5 backdrop-blur-sm px-6 py-4">
           <div className="text-accent text-xs font-semibold tracking-[0.3em] uppercase mb-2">
-            Upcoming Event
+            Upcoming event
           </div>
           <div className="text-white text-2xl sm:text-3xl font-bold mb-2">
-            Race Registration Opening Soon
+            Race registration opening soon
           </div>
           <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
             A new D Sports Lab race is on the way. More details will be announced soon.
@@ -90,13 +90,13 @@ export default function Hero() {
             rel="noopener noreferrer"
             className="bg-accent hover:bg-yellow-500 text-dark font-bold text-base px-8 py-4 rounded-full transition-all duration-200 hover:shadow-xl hover:shadow-accent/30 hover:-translate-y-1 min-w-[160px]"
           >
-            Join the Club
+            Join the club
           </a>
           <a
             href="/events"
             className="border-2 border-primary/60 hover:border-primary text-gray-200 hover:text-white font-semibold text-base px-8 py-4 rounded-full transition-all duration-200 hover:-translate-y-1 min-w-[160px]"
           >
-            View Events
+            View events
           </a>
         </div>
 
