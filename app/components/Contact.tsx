@@ -2,45 +2,44 @@
 
 import { useState } from "react";
 
-type FormState = "idle" | "loading" | "success" | "error";
+type FormState = "idle" | "success" | "error";
+
+const FORMSUBMIT_ENDPOINT = "https://formsubmit.co/ajax/Dsportslab@gmail.com";
 
 export default function Contact() {
   const [formState, setFormState] = useState<FormState>("idle");
   const [errorMsg, setErrorMsg] = useState("");
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setFormState("loading");
+    setFormState("idle");
     setErrorMsg("");
 
     const form = e.currentTarget;
-    const formData = new FormData(form);
-    const name = String(formData.get("name") || "").trim();
-    const email = String(formData.get("email") || "").trim();
-    const phone = String(formData.get("phone") || "").trim();
-    const message = String(formData.get("message") || "").trim();
+    const data = new FormData(form);
+    data.set("_subject", "D Sports Lab Website Contact");
+    data.set("_captcha", "false");
+    data.set("_template", "table");
 
-    if (!name || !email || !message) {
-      setErrorMsg("Please complete the required fields.");
+    try {
+      const res = await fetch(FORMSUBMIT_ENDPOINT, {
+        method: "POST",
+        body: data,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (!res.ok) {
+        throw new Error("Form submission failed");
+      }
+
+      form.reset();
+      setFormState("success");
+    } catch {
       setFormState("error");
-      return;
+      setErrorMsg("Submission failed. The club email may still need to confirm the FormSubmit activation email.");
     }
-
-    const subject = encodeURIComponent(`D Sports Lab Website Contact — ${name}`);
-    const body = encodeURIComponent(
-      [
-        `Name: ${name}`,
-        `Email: ${email}`,
-        `Phone: ${phone || "Not provided"}`,
-        "",
-        "Message:",
-        message,
-      ].join("\n")
-    );
-
-    window.location.href = `mailto:Dsportslab@gmail.com?subject=${subject}&body=${body}`;
-    form.reset();
-    setFormState("success");
   }
 
   return (
@@ -153,16 +152,16 @@ export default function Contact() {
           <div className="text-center mb-10">
             <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">Send Us a Message</h3>
             <p className="text-gray-400">
-              Fill in the form below and your email app will open with your message ready to send to the club.
+              Fill in the form below and your message will be submitted directly to the club email.
             </p>
           </div>
 
           {formState === "success" ? (
             <div className="bg-green-900/30 border border-green-600/40 rounded-2xl p-10 text-center">
-              <div className="text-5xl mb-4">✉️</div>
-              <h4 className="text-white text-xl font-bold mb-2">Email Draft Opened</h4>
+              <div className="text-5xl mb-4">🎉</div>
+              <h4 className="text-white text-xl font-bold mb-2">Message Sent!</h4>
               <p className="text-gray-300 text-sm leading-relaxed">
-                Your email app should now open with the message pre-filled for D Sports Lab.
+                Your message was submitted successfully. Please note that the first FormSubmit message may require email confirmation for activation.
               </p>
               <button
                 onClick={() => setFormState("idle")}
@@ -237,14 +236,13 @@ export default function Contact() {
 
               <button
                 type="submit"
-                disabled={formState === "loading"}
-                className="w-full bg-accent hover:bg-yellow-500 disabled:opacity-60 disabled:cursor-not-allowed text-dark font-bold py-4 rounded-full text-sm transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-accent/30"
+                className="w-full bg-accent hover:bg-yellow-500 text-dark font-bold py-4 rounded-full text-sm transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-accent/30"
               >
-                {formState === "loading" ? "Preparing Email…" : "Email Us"}
+                Send Message
               </button>
 
               <p className="text-center text-gray-600 text-xs">
-                Or email us directly at <a href="mailto:Dsportslab@gmail.com" className="text-primary hover:text-accent transition-colors">Dsportslab@gmail.com</a>
+                Messages are sent to <a href="mailto:Dsportslab@gmail.com" className="text-primary hover:text-accent transition-colors">Dsportslab@gmail.com</a>
               </p>
             </form>
           )}
