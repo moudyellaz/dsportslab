@@ -58,7 +58,7 @@ export default function Disciplines() {
             What We Do
           </span>
           <h2 className="text-4xl sm:text-5xl font-bold text-white mt-2 mb-4">
-            Our Disciplines
+            Our disciplines
           </h2>
           <div className="h-1 w-16 bg-accent mx-auto rounded-full mb-6" />
           <p className="text-gray-400 max-w-2xl mx-auto text-lg">
@@ -111,7 +111,7 @@ export default function Disciplines() {
               href="/#contact"
               className="inline-flex items-center justify-center bg-accent hover:bg-yellow-500 text-dark font-bold text-sm px-6 py-3 rounded-full transition-all hover:-translate-y-0.5"
             >
-              Contact Us for Triathlon Info
+              Contact us for triathlon info
             </a>
           </div>
         </div>

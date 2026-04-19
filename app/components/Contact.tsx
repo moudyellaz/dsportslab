@@ -4,7 +4,7 @@ import { useState } from "react";
 
 type FormState = "idle" | "success" | "error";
 
-const FORMSUBMIT_ENDPOINT = "https://formsubmit.co/ajax/Dsportslab@gmail.com";
+const FORMSUBMIT_ENDPOINT = "https://formsubmit.co/ajax/dsportslab@gmail.com";
 
 export default function Contact() {
   const [formState, setFormState] = useState<FormState>("idle");
@@ -57,7 +57,7 @@ export default function Contact() {
 
         <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
           <a
-            href="mailto:Dsportslab@gmail.com"
+            href="mailto:dsportslab@gmail.com"
             className="bg-dark-card border border-dark-border hover:border-primary/50 rounded-3xl p-8 text-center flex flex-col items-center gap-4 transition-all hover:-translate-y-1 group"
           >
             <div className="w-14 h-14 rounded-2xl bg-primary/20 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
@@ -68,7 +68,7 @@ export default function Contact() {
             <div>
               <div className="text-xs text-gray-500 uppercase tracking-widest mb-1">Email</div>
               <div className="text-white font-semibold text-sm group-hover:text-accent transition-colors">
-                Dsportslab@gmail.com
+                dsportslab@gmail.com
               </div>
             </div>
           </a>
@@ -175,7 +175,7 @@ export default function Contact() {
               <div className="grid sm:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-medium text-gray-300 mb-2" htmlFor="name">
-                    Full Name <span className="text-accent">*</span>
+                    Full name <span className="text-accent">*</span>
                   </label>
                   <input
                     id="name"
@@ -242,7 +242,7 @@ export default function Contact() {
               </button>
 
               <p className="text-center text-gray-600 text-xs">
-                Messages are sent to <a href="mailto:Dsportslab@gmail.com" className="text-primary hover:text-accent transition-colors">Dsportslab@gmail.com</a>
+                Messages are sent to <a href="mailto:dsportslab@gmail.com" className="text-primary hover:text-accent transition-colors">dsportslab@gmail.com</a>
               </p>
             </form>
           )}
