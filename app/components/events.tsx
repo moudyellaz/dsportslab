@@ -26,8 +26,7 @@ export default function Events() {
                   D Sports Lab Race Event
                 </h3>
                 <p className="text-gray-300 text-base leading-relaxed max-w-2xl">
-                  A new race event is on the way. Tomorrow we can add the Google Form registration link,
-                  race details, and the full call to action here.
+                  A new race event is on the way. Full race details and registration will be announced soon.
                 </p>
               </div>
               <div className="bg-dark/60 border border-dark-border rounded-2xl px-5 py-4 min-w-[140px] text-center">
@@ -38,18 +37,16 @@ export default function Events() {
 
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <a
-                href="https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAFhIIjIF-RUMUU4Wk9HSVY1UTgyTVRPWE05WThLNlg1Ny4u&route=shorturl"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/#contact"
                 className="inline-flex items-center justify-center bg-accent hover:bg-yellow-500 text-dark font-bold text-sm px-6 py-3 rounded-full transition-all hover:-translate-y-0.5"
               >
-                Join the Club
+                Ask for Details
               </a>
               <a
-                href="#hero"
+                href="/"
                 className="inline-flex items-center justify-center border border-dark-border hover:border-primary/60 text-gray-300 hover:text-white font-semibold text-sm px-6 py-3 rounded-full transition-all"
               >
-                Back to Top
+                Back to Home
               </a>
             </div>
           </div>
