@@ -21,7 +21,7 @@ const disciplines = [
     border: "border-amber-700/30 hover:border-accent/50",
     badge: "bg-amber-900/60 text-amber-300",
     description:
-      "Hit the roads of Gozo with group rides and structured cycling sessions. Improve your power, climbing strength, and race-day strategy in one of Malta&apos;s most scenic riding environments.",
+      "Hit the roads of Gozo with group rides and structured cycling sessions. Improve your power, climbing strength, and race-day strategy in one of Malta's most scenic riding environments.",
     highlights: [
       "Road & turbo trainer sessions",
       "Power & cadence training",
@@ -36,7 +36,7 @@ const disciplines = [
     border: "border-green-700/30 hover:border-green-500/50",
     badge: "bg-green-900/60 text-green-300",
     description:
-      "Build a strong, injury-resistant run with coached sessions that blend speed work, threshold training, and long runs. Whether you&apos;re chasing a 5K personal best or preparing for a longer race, we&apos;ll help you get there.",
+      "Build a strong, injury-resistant run with coached sessions that blend speed work, threshold training, and long runs. Whether you're chasing a 5K personal best or preparing for a longer race, we'll help you get there.",
     highlights: [
       "Track, trail & road sessions",
       "Speed & tempo workouts",
